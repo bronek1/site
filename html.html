@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>CHEATY DO QUIZÓW</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 25, 2021 09:00:00").getTime();
+		
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+                
+        // Get today's date and time
+        var now = new Date().getTime();
+                
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+                
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+        // Display the result in the element with id="demo"
+        document.getElementById("countdown").innerHTML = days + " dni " + hours + " godz " + minutes + " min " + seconds + " sek ";
+                
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+                document.getElementById("countdown").innerHTML = "już po :)";
+                }
+        }, 1000);
+    </script>
+    
+    <div id="main-container">
+
+        <div class="main-box">
+        <div class="main-box-content">
+            <!--header-->
+
+            <h1>Cheaty do quizów!</h1>
+
+            <h2 class="countdown">do egzaminu pozostało:</h2>
+            <h2 id="countdown" class="countdown">countdown</h2>
+
+            <!--header-->
+
+            <hr>
+
+            <!--avaiblity pages-->
+
+            <h2>Dostępne hacki:</h2>
+
+            <div class="list">
+            <ul>
+                <li>Quizizz</li>
+                <li>Testportal</li>
+                <li>Kahoot</li>
+            </ul>
+            </div>
+
+            <!--avaiblity pages-->
+
+            <hr>
+
+            <!--what inside-->
+
+            <h2>Co zawierają cheaty?</h2>
+
+            <div class="list">
+            <ul>
+                <li>Odpowiedzi <b>egzamin ósmoklaisty</b>,</li>
+                <li>omówienie lektur <b>obowiązkowych</b>,</li>
+                <li><b>proste</b>, lecz dobre wytłumaczenie wszystkich tematów,</li>
+                <li>początki <b>materiału licealnego</b>,</li>
+                <li>arkusze egzaminacyjne.</li>
+            </ul>
+            </div>
+
+            <!--what inside-->
+
+            <hr>
+
+            <!--buy-->
+
+            <h2>cena: <s>29.99ZŁ</s> 10.00ZŁ!</h2>
+
+            <a href="https://tipply.pl/u/notatki" class="btn">kup teraz!</a>
+
+            <br />
+
+            <span class="warning"><b>uwaga!</b> w wiadomości donate, proszę o podanie <b>mail'a</b>!</span>
+            <span class="warning">na niego po kupnie zostaną przesłane notatki :)</span>
+          <span class="warning">Należy wpłacić kwotę 10zł, aby uzyskać notatki!</span>
+
+            <br />
+
+            <!--buy-->
+        </div>
+        </div>
+
+    </div>
+
+    <!--site created by @themixhelp - https://themixhelp.github.io/site/ -->
+
+</body>
+</html>
